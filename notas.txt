@@ -1,0 +1,31 @@
+*********************
+**  base de datos  **
+*********************
+
+en el doc conn.php se hace la conexion a la base de datos, tienen que importar el doc 'cineplus/bd/cineplus.sql' a http://localhost/phpmyadmin/
+
+en model.php está la forma en que se va a hacer la consulta para a la base de datos para que ingrese los valores a las tablas. 
+hice una tabla por pelicula y una fila por asiento.
+
+en view/templates/... están los tpl de cada pelicula. cada asiento es un <div> tiene un id que corresponde a la fila en la base de datos. 
+hace falta crear un boton 'Enviar' en el tpl para que se envie la informacion. para eso hay que meter todo dentro de un <form> y así se envíe la informacion
+
+hay que asignarle al boton 'Enviar' una accion para que ejecute el metodo que hace la consulta en la base de datos
+
+dejé el doc sql pero es para que se hagan una idea, de cómo creo que que podría funcionar
+
+
+**********
+**  js  **
+**********
+
+si alguien le sabe al js puede hacer que los asientos que ya no estén disponbibles estén 'grey out' 
+pero para eso habria que hacer un query a la base de datos tambien
+
+tambien se puede hacer con php.
+
+
+
+*************************************
+
+agreguenle los iconos de redes sociales al footer
